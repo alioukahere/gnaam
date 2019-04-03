@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+
+$font-family: 'Fira Sans';
+$primary-color: #30E3CA;
+
+* {
+	font-family: $font-family;
+}
+
+body {
+	background-color: #f7f7f7;
+}
+
 /* navbar */
 nav {
 	height: 80px;
@@ -35,7 +48,14 @@ nav {
 .btn {
 	border: none;
 	outline: none;
-	background-color: #30E3CA;
+	background-color: $primary-color;
+}
+
+
+/* section */
+.section {
+	padding-top: 50px;
+	padding-bottom: 20px;
 }
 
 
@@ -53,10 +73,12 @@ nav {
 
 	h1 {
 		font-size: 3.2rem;
+		color: #;
 	}
 
 	h2 {
 		font-size: 1.5rem;
+		line-height: 2rem;
 	}
 
 	&::before {
@@ -70,5 +92,28 @@ nav {
 		background: rgb(239,222,205);
         background: linear-gradient(107deg, rgba(239,222,205,.9) 21%, rgba(247,247,247,.5) 61%);
 		z-index: -1;
+	}
+}
+
+
+/* services */
+.services {
+	.service {
+		text-align: center;
+
+		.icon {
+			img {
+				height: 100px;
+				width: auto;
+			}
+		}
+
+		h3 {
+			font-size: 1.9rem;
+		}
+
+		p {
+			color: #9E9E9E;
+		}
 	}
 }

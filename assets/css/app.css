@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+* {
+  font-family: "Fira Sans";
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
 /* navbar */
 nav {
   height: 80px;
@@ -28,6 +37,12 @@ nav.solid {
   background-color: #30E3CA;
 }
 
+/* section */
+.section {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 /* hero */
 .hero {
   min-height: 650px;
@@ -42,9 +57,11 @@ nav.solid {
 }
 .hero h1 {
   font-size: 3.2rem;
+  color: #;
 }
 .hero h2 {
   font-size: 1.5rem;
+  line-height: 2rem;
 }
 .hero::before {
   content: "";
@@ -57,6 +74,21 @@ nav.solid {
   background: #efdecd;
   background: linear-gradient(107deg, rgba(239, 222, 205, 0.9) 21%, rgba(247, 247, 247, 0.5) 61%);
   z-index: -1;
+}
+
+/* services */
+.services .service {
+  text-align: center;
+}
+.services .service .icon img {
+  height: 100px;
+  width: auto;
+}
+.services .service h3 {
+  font-size: 1.9rem;
+}
+.services .service p {
+  color: #9E9E9E;
 }
 
 /*# sourceMappingURL=app.css.map */
