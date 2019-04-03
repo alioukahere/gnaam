@@ -1,0 +1,62 @@
+/* navbar */
+nav {
+  height: 80px;
+  line-height: 80px;
+  background-color: transparent;
+  box-shadow: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+nav .brand-logo img {
+  width: 60px;
+  margin-top: 10px;
+}
+nav ul li a {
+  color: #000;
+}
+nav.solid {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+/* buttons */
+.btn {
+  border: none;
+  outline: none;
+  background-color: #30E3CA;
+}
+
+/* hero */
+.hero {
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  background: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.hero h1 {
+  font-size: 3.2rem;
+}
+.hero h2 {
+  font-size: 1.5rem;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #efdecd;
+  background: linear-gradient(107deg, rgba(239, 222, 205, 0.9) 21%, rgba(247, 247, 247, 0.5) 61%);
+  z-index: -1;
+}
+
+/*# sourceMappingURL=app.css.map */
