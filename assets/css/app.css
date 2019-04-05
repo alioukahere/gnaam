@@ -18,6 +18,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 999;
+  transition: all 0.5s;
 }
 nav .brand-logo img {
   width: 60px;
@@ -28,6 +29,7 @@ nav ul li a {
 }
 nav.solid {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
 }
 
 /* buttons */
@@ -35,12 +37,21 @@ nav.solid {
   border: none;
   outline: none;
   background-color: #30E3CA;
+  box-shadow: none;
+}
+.btn.btn-red {
+  background-color: #FD0054;
 }
 
 /* section */
 .section {
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
 }
 
 /* hero */
@@ -81,7 +92,7 @@ nav.solid {
   text-align: center;
 }
 .services .service .icon img {
-  height: 100px;
+  height: 150px;
   width: auto;
 }
 .services .service h3 {
@@ -89,6 +100,81 @@ nav.solid {
 }
 .services .service p {
   color: #9E9E9E;
+}
+
+/* cta */
+.cta {
+  background: url("https://images.pexels.com/photos/459469/pexels-photo-459469.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.cta::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #30e3ca;
+  background: linear-gradient(107deg, rgba(48, 227, 202, 0.9) 50%, rgba(247, 247, 247, 0.5) 100%);
+  z-index: -1;
+}
+.cta h2 {
+  color: #fff;
+}
+
+/* form */
+form .input-group {
+  margin-bottom: 10px;
+}
+form input[type=text],
+form input[type=email] {
+  padding: 0.2rem 1rem !important;
+  border: none !important;
+  outline: none !important;
+  background-color: #ececec !important;
+}
+form input[type=text]:focus,
+form input[type=email]:focus {
+  box-shadow: none !important;
+}
+
+/* contact */
+.contact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.contact h2 {
+  margin-bottom: -5px;
+}
+.contact ul li {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.contact ul li i.fab {
+  background-color: #ececec;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  border-radius: 50px;
+  color: #000;
+}
+
+/* footer */
+footer {
+  background-color: #30E3CA;
+  text-align: center;
+  color: #fff;
+  padding: 10px 0 5px 0;
+}
+footer a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=app.css.map */
