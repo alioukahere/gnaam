@@ -176,6 +176,10 @@ form {
 	    &:focus {
 	    	box-shadow: none !important;
 	    }
+
+	    &::placeholder {
+	    	color: #4C4C4C;
+	    }
 	}
 }
 
