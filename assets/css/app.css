@@ -3,6 +3,10 @@
   font-family: "Fira Sans";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f7f7f7;
 }
@@ -26,6 +30,11 @@ nav .brand-logo img {
 }
 nav ul li a {
   color: #000;
+}
+@media (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
 }
 nav.solid {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
@@ -137,6 +146,7 @@ form input[type=email] {
   border: none !important;
   outline: none !important;
   background-color: #ececec !important;
+  width: calc(100% - 2rem) !important;
 }
 form input[type=text]:focus,
 form input[type=email]:focus {

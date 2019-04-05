@@ -7,6 +7,10 @@ $primary-color: #30E3CA;
 	font-family: $font-family;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	background-color: #f7f7f7;
 }
@@ -35,6 +39,12 @@ nav {
 		li {
 			a {
 				color: #000;
+			}
+		}
+
+		@media (max-width: 1000px) {
+			& {
+				display: none;
 			}
 		}
 	}
@@ -172,6 +182,7 @@ form {
 	    border: none !important;
 	    outline: none !important;
 	    background-color: rgb(236, 236, 236) !important;
+	    width: calc(100% - 2rem) !important;
 
 	    &:focus {
 	    	box-shadow: none !important;
